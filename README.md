@@ -1,26 +1,41 @@
-# Student-Attendance-System
-A Python-based student attendance system using face recognition for automatic attendance marking, integrated with Firebase Realtime Database and Storage for seamless management.
+# Student Attendance System
 
-This project is a face recognition-based attendance system using Python, OpenCV, Firebase, and face_recognition.
+This is a **Python-based Student Attendance System** that uses **facial recognition** to automate the process of marking attendance.  
+It integrates with **Firebase** for real-time data storage and file management.
+
+---
 
 ## Features
-- Real-time face recognition using webcam
-- Automatic attendance marking
-- Firebase Realtime Database and Storage integration
-- New student registration if face not recognized
-- Secure data storage with JSON secrets file
 
-## Technologies Used
-- Python
-- OpenCV
-- Firebase (Realtime DB + Storage)
-- face_recognition
-- cvzone
-- NumPy
-- Pickle
+- 🔥 Real-time face recognition and attendance marking
+- ☁️ Secure integration with **Firebase** for database and storage
+- 🖼️ Beautiful UI with background images from a custom **resources** folder
+- 🧠 User-friendly scripts for:
+  - Encoding new student faces
+  - Adding student data to the database
+  - Creating and managing usernames
 
-## Setup
-1. Clone the repository.
-2. Install dependencies:
+---
+
+## Project Structure
+
+| File/Folder            | Purpose |
+|-------------------------|---------|
+| `main2.py`              | Main execution file to run the attendance system |
+| `encoding_generator.py` | Generates facial encoding files (`.p` format) |
+| `add_to_database.py`    | Adds new student records to the Firebase database |
+| `username.py`           | Creates and manages unique usernames |
+| `resources/`            | Contains background images used by the UI |
+| `ServiceAccountKey.json`| Firebase service account credentials *(Not uploaded for security)* |
+
+---
+
+## Setup Instructions
+
+1. Clone this repository.
+2. Set up a **Firebase** project and download the service account key.
+3. Place your `ServiceAccountKey.json` inside the project folder.
+4. Install required Python libraries:
+
    ```bash
    pip install -r requirements.txt
