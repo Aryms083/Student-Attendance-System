@@ -39,3 +39,25 @@ It integrates with **Firebase** for real-time data storage and file management.
 
    ```bash
    pip install -r requirements.txt
+   Run the encoding generator to add new students:
+
+python encoding_generator.py
+Add students to the database using:
+
+python add_to_database.py
+Start the attendance system:
+
+python main2.py
+Notes
+Secrets like Firebase keys are never pushed to the public repository.
+
+Please configure Firebase Storage and Realtime Database with the correct permissions.
+
+All images for UI backgrounds must be placed in the resources folder.
+
+Disclaimer
+This project is developed for educational purposes and internal use.
+Any unauthorized copying, distribution, or public hosting without permission is discouraged.
+
+License
+© 2025 Aryms083 - All rights reserved.
